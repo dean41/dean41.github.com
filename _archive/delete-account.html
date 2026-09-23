@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Your Data — [APP_NAME]</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #1a1a1a;
+            --muted: #5f6368;
+            --border: #e0e0e0;
+            --accent: #1a73e8;
+            --card: #f7f8f9;
+            --danger: #d93025;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            line-height: 1.75;
+            font-size: 16px;
+        }
+        .wrap { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+        h1 { font-size: 26px; margin: 0 0 8px; letter-spacing: -0.01em; }
+        .subtitle { color: var(--muted); font-size: 15px; margin: 0 0 34px; }
+        h2 {
+            font-size: 18px;
+            margin: 34px 0 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        p { margin: 0 0 14px; }
+        a { color: var(--accent); text-decoration: none; word-break: break-word; }
+        a:hover { text-decoration: underline; }
+        ul { margin: 0 0 14px; padding-left: 22px; }
+        li { margin-bottom: 8px; }
+        ol { margin: 0 0 14px; padding-left: 22px; }
+        .step {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin-bottom: 16px;
+        }
+        .step h3 { margin: 0 0 10px; font-size: 16px; }
+        .step p:last-child, .step ul:last-child, .step ol:last-child { margin-bottom: 0; }
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+        }
+        .btn:hover { background: #1765cc; text-decoration: none; }
+        .btn-danger { background: var(--danger); }
+        .btn-danger:hover { background: #b3261e; }
+        .warn {
+            background: #fdecea;
+            border-left: 3px solid var(--danger);
+            padding: 12px 16px;
+            margin: 20px 0;
+            font-size: 14.5px;
+            border-radius: 0 6px 6px 0;
+        }
+        .warn strong { color: #a52714; }
+        .note {
+            background: #fff8e6;
+            border-left: 3px solid #f0ad4e;
+            padding: 12px 16px;
+            margin: 20px 0;
+            font-size: 14.5px;
+            border-radius: 0 6px 6px 0;
+        }
+        footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+
+    <h1>Delete Your Data</h1>
+    <p class="subtitle">For [APP_NAME] &nbsp;·&nbsp; Yeehaw Studio</p>
+
+    <p>[APP_NAME] has <strong>no accounts, no login, and no registration</strong>, so there is no user profile stored under your name. Data associated with your device is limited to an advertising identifier, anonymous usage statistics, and — on iOS and only if you choose to sign in — your <strong>Game Center</strong> player ID and leaderboard scores. You can remove all of it at any time, free of charge.</p>
+
+    <div class="note">
+        <strong>We keep no copy of your scores.</strong> Leaderboard data lives on Apple's servers and on your device. We operate no game server of our own, so there is nothing on our side to delete — the steps below remove it at the source.
+    </div>
+
+    <h2>Method 1 — Reset your advertising ID (fastest)</h2>
+    <div class="step">
+        <h3>iOS</h3>
+        <ol>
+            <li>Open <strong>Settings</strong>.</li>
+            <li>Go to <strong>Privacy &amp; Security → Apple Advertising</strong>.</li>
+            <li>Turn on <strong>Personalized Ads</strong> off, or reset your Advertising Identifier.</li>
+        </ol>
+    </div>
+    <div class="step">
+        <h3>Android</h3>
+        <ol>
+            <li>Open <strong>Settings → Google → Ads</strong>.</li>
+            <li>Tap <strong>Reset advertising ID</strong>, then confirm.</li>
+            <li>Optionally enable <strong>Opt out of ads personalisation</strong>.</li>
+        </ol>
+    </div>
+    <p>This immediately severs the link between your device and ad data collected previously. Uninstalling the App has the same effect on locally stored preferences.</p>
+
+    <h2>Method 2 — Remove leaderboard scores and local data</h2>
+    <div class="step">
+        <h3>Local settings and best scores</h3>
+        <p>Uninstall [APP_NAME]. Everything saved on your device — settings, progress, best scores — is erased with it.</p>
+    </div>
+    <div class="step">
+        <h3>Game Center scores (iOS)</h3>
+        <ol>
+            <li>Open <strong>Settings → Game Center</strong>.</li>
+            <li>Sign out, or turn off the leaderboard for [APP_NAME].</li>
+            <li>To delete data Apple already holds, go to <a href="https://privacy.apple.com" target="_blank" rel="noopener">privacy.apple.com</a> and sign in with your Apple ID.</li>
+        </ol>
+        <p>We hold no copy of your scores, so there is nothing further to remove on our side.</p>
+    </div>
+    <p>On <strong>Android</strong>, scores are never uploaded — uninstalling the App removes everything.</p>
+
+    <h2>Method 3 — Email us a deletion request</h2>
+    <div class="step">
+        <h3>Ask us to delete what we hold</h3>
+        <p>Email <a href="mailto:YeehawStudio@gmail.com?subject=Data%20Deletion%20Request&body=Please%20delete%20all%20data%20associated%20with%20my%20use%20of%20[APP_NAME].%0D%0A%0D%0ADevice%20platform%20(iOS%2FAndroid)%3A%20%0D%0AAdvertising%20ID%20(optional)%3A%20">YeehawStudio@gmail.com</a> with the subject <strong>"Data Deletion Request"</strong> and include:</p>
+        <ul>
+            <li>Your device platform (iOS or Android)</li>
+            <li>Your advertising ID (optional — helps us locate the records faster)</li>
+        </ul>
+        <p>
+            <a class="btn btn-danger" href="mailto:YeehawStudio@gmail.com?subject=Data%20Deletion%20Request&body=Please%20delete%20all%20data%20associated%20with%20my%20use%20of%20[APP_NAME].%0D%0A%0D%0ADevice%20platform%20(iOS%2FAndroid)%3A%20%0D%0AAdvertising%20ID%20(optional)%3A%20">Email deletion request</a>
+        </p>
+        <p>We confirm by reply and complete deletion within 30 days.</p>
+    </div>
+
+    <h2>What gets deleted</h2>
+    <ul>
+        <li>Advertising identifier associations and ad interaction history</li>
+        <li>Usage and diagnostic records linked to your device</li>
+        <li>Locally saved settings, progress, and best scores (removed by uninstalling)</li>
+        <li>Game Center leaderboard scores and achievement progress (removed via Apple)</li>
+        <li>Support correspondence you have sent us</li>
+    </ul>
+
+    <h2>What we may retain</h2>
+    <ul>
+        <li>Anonymised, aggregated statistics that can no longer be linked to you</li>
+        <li>Purchase and refund records, where tax or accounting law requires retention — retained for [ADJUST: e.g. 5 years]</li>
+    </ul>
+
+    <h2>About data held by Google AdMob</h2>
+    <p>Ads in [APP_NAME] are served by <strong>Google AdMob</strong>, which processes advertising data under its own policies. Resetting your device's advertising ID stops future association, but data Google has already collected is controlled by Google. You can manage or delete it through your <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">Google Account → Data &amp; privacy</a>, or review options at <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener">aboutads.info/choices</a>.</p>
+    <p>See our <a href="privacy.html">Privacy Policy §4</a> for the full advertising disclosure.</p>
+
+    <h2>Cancel a subscription first</h2>
+    <p>If you have a paid subscription, deleting data or uninstalling the App does <strong>not</strong> cancel it. Cancel here:</p>
+    <ul>
+        <li><strong>iOS:</strong> Settings → your Apple ID → Subscriptions → [APP_NAME] → Cancel</li>
+        <li><strong>Android:</strong> Google Play → profile icon → Payments &amp; subscriptions → Subscriptions → [APP_NAME] → Cancel</li>
+    </ul>
+
+    <div class="note">
+        <strong>Only want a copy of your data, or want to opt out instead?</strong> Email us for an export, or read the <a href="privacy.html">Privacy Policy</a> §4.2 to turn off personalised ads without deleting anything. More help on the <a href="index.html">Support page</a>.
+    </div>
+
+    <footer>
+        <p>&copy; [YEAR] Yeehaw Studio. All rights reserved.</p>
+    </footer>
+
+</div>
+</body>
+</html>

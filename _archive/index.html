@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[APP_NAME] - Support</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --fg: #1a1a1a;
+            --muted: #5f6368;
+            --border: #e0e0e0;
+            --accent: #1a73e8;
+            --card: #f7f8f9;
+        }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+        .wrap { max-width: 760px; margin: 0 auto; padding: 48px 24px 80px; }
+        h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: -0.01em; }
+        .subtitle { color: var(--muted); font-size: 15px; margin: 0 0 40px; }
+        h2 {
+            font-size: 19px;
+            margin: 40px 0 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid var(--border);
+        }
+        p { margin: 0 0 14px; }
+        a { color: var(--accent); text-decoration: none; word-break: break-word; }
+        a:hover { text-decoration: underline; }
+        ul { margin: 0 0 14px; padding-left: 22px; }
+        li { margin-bottom: 8px; }
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px 20px;
+            margin-bottom: 16px;
+        }
+        .card-title { font-weight: 600; margin: 0 0 10px; }
+        .card p:last-child { margin-bottom: 0; }
+        details {
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px 18px;
+            margin-bottom: 10px;
+            background: var(--bg);
+        }
+        details[open] { background: var(--card); }
+        summary { cursor: pointer; font-weight: 600; outline: none; list-style: none; }
+        summary::-webkit-details-marker { display: none; }
+        summary::before { content: "▸ "; color: var(--accent); }
+        details[open] summary::before { content: "▾ "; }
+        details p, details ul { margin: 12px 0 0; }
+        .contact-line { margin: 6px 0; }
+        .contact-label { color: var(--muted); display: inline-block; min-width: 90px; }
+        footer {
+            margin-top: 56px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+
+    <h1>[APP_NAME] Support</h1>
+    <p class="subtitle">Need help? We're here for you.</p>
+
+    <h2>Contact Us</h2>
+    <div class="card">
+        <p class="card-title">Yeehaw Studio</p>
+        <p class="contact-line"><span class="contact-label">Email</span> <a href="mailto:YeehawStudio@gmail.com">YeehawStudio@gmail.com</a></p>
+        <p class="contact-line"><span class="contact-label">Phone</span> [PHONE]</p>
+        <p class="contact-line"><span class="contact-label">Response</span> We typically reply within 1–2 business days.</p>
+    </div>
+    <p>When contacting us, please include your device model, OS version, and a short description of the issue. Screenshots help a lot.</p>
+
+    <h2>Frequently Asked Questions</h2>
+
+    <details>
+        <summary>Do I need to sign up or create an account?</summary>
+        <p>No. [APP_NAME] requires no registration, no login, and no account. Install it and use it immediately. We never ask for your name, email, or password.</p>
+        <p>On iOS you may optionally sign in with <strong>Apple Game Center</strong> to submit scores to the leaderboard. This is optional and handled entirely by Apple — we never see your Apple ID credentials. On Android, scores are never uploaded.</p>
+    </details>
+
+    <details>
+        <summary>How do leaderboards work, and how do I remove my scores?</summary>
+        <p>Leaderboards use <strong>Apple Game Center</strong> on iOS. Scores are stored by Apple and cached on your device; we keep no copy on any server of our own. To remove them:</p>
+        <ul>
+            <li><strong>Local scores:</strong> uninstall the App.</li>
+            <li><strong>Stop submitting:</strong> sign out in Settings → Game Center.</li>
+            <li><strong>Data Apple holds:</strong> manage it at <a href="https://privacy.apple.com" target="_blank" rel="noopener">privacy.apple.com</a>.</li>
+        </ul>
+        <p>On Android, scores are stored locally only — uninstalling the App removes them.</p>
+    </details>
+
+    <details>
+        <summary>Why does the app show ads?</summary>
+        <p>[APP_NAME] is currently free and supported by advertising, which lets us keep developing it. Ads are served by Google AdMob. In the EEA, UK, and Switzerland we ask for your consent before showing personalised ads; elsewhere you can turn personalised ads off at any time (see below). See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+    </details>
+
+    <details>
+        <summary>How do I turn off personalised ads?</summary>
+        <ul>
+            <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Tracking → turn off "Allow Apps to Request to Track". To reset your advertising ID: Settings → Privacy &amp; Security → Apple Advertising.</li>
+            <li><strong>Android:</strong> Settings → Google → Ads → Opt out of ads personalisation. To reset your advertising ID: Settings → Google → Ads → Reset advertising ID.</li>
+        </ul>
+        <p>Ads will still appear, but they will be less relevant to you. This does not delete data already collected — see <a href="delete-account.html">Delete Your Data</a>.</p>
+    </details>
+
+    <details>
+        <summary>Will there be a paid / ad-free version?</summary>
+        <p>[ADJUST: Yes — a paid option to remove ads is coming. / An ad-free version is planned; follow us for updates.] Existing users will keep access to all current free features.</p>
+    </details>
+
+    <details>
+        <summary>The app crashes or won't open. What should I do?</summary>
+        <p>Force-close the app and restart it. If the problem persists, check that your device is on a supported OS version, then reinstall from the App Store or Google Play. If it still fails, email us with your device model and OS version.</p>
+    </details>
+
+    <details>
+        <summary>How do I restore my purchases?</summary>
+        <p>Open the app and go to Settings, then tap <strong>Restore Purchases</strong>. This re-links previous purchases to your current Apple ID or Google account at no extra cost. Make sure you are signed in with the same store account used for the original purchase.</p>
+    </details>
+
+    <details>
+        <summary>How do I cancel a subscription?</summary>
+        <p>Subscriptions are handled by Apple or Google, not by us. On iOS: Settings → your Apple ID → Subscriptions. On Android: Google Play → profile icon → Payments &amp; subscriptions → Subscriptions. Cancel at least 24 hours before the renewal date to avoid being charged for the next period. Deleting the app does not cancel a subscription.</p>
+    </details>
+
+    <details>
+        <summary>Does the app work offline?</summary>
+        <p>[ADJUST: Yes, all core features work without an internet connection. / An internet connection is required for &lt;list features&gt;.]</p>
+    </details>
+
+    <h2>Delete Your Data</h2>
+    <p>[APP_NAME] has no accounts of its own, so there is no profile stored under your name. Data linked to your device is limited to an advertising identifier, anonymous usage statistics, and — on iOS, only if you sign in — your Game Center player ID and leaderboard scores. You can remove it at any time:</p>
+    <ul>
+        <li><strong>Reset your advertising ID</strong> — iOS: Settings → Privacy &amp; Security → Apple Advertising. Android: Settings → Google → Ads → Reset advertising ID.</li>
+        <li><strong>Uninstall the App</strong> — clears locally saved settings and best scores.</li>
+        <li><strong>Game Center scores (iOS):</strong> sign out in Settings → Game Center to stop submitting; data held by Apple is managed at <a href="https://privacy.apple.com" target="_blank" rel="noopener">privacy.apple.com</a>.</li>
+        <li><strong>Request deletion:</strong> <a href="delete-account.html">data deletion request page</a></li>
+        <li><strong>Email us:</strong> <a href="mailto:YeehawStudio@gmail.com">YeehawStudio@gmail.com</a></li>
+    </ul>
+    <p>Requests are completed within 30 days. Details are in our <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>Privacy</h2>
+    <p>Read our <a href="privacy.html">Privacy Policy</a> to learn what data [APP_NAME] collects, how it is used, and the choices available to you.</p>
+
+    <footer>
+        <p>&copy; [YEAR] Yeehaw Studio. All rights reserved.</p>
+    </footer>
+
+</div>
+</body>
+</html>
