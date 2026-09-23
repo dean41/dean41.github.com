@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flowerz — Support</title>
+<style>
+    :root {
+        --bg: #ffffff;
+        --fg: #1a1a1a;
+        --muted: #5f6368;
+        --border: #e0e0e0;
+        --accent: #1a73e8;
+        --card: #f7f8f9;
+    }
+    * { box-sizing: border-box; }
+    body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans", "Malgun Gothic", "Microsoft YaHei", sans-serif;
+        line-height: 1.75;
+        font-size: 16px;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 32px 24px 80px; }
+    .langbar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
+    .langbar button {
+        font: inherit;
+        font-size: 14px;
+        padding: 6px 14px;
+        border: 1px solid var(--border);
+        background: var(--bg);
+        color: var(--muted);
+        border-radius: 999px;
+        cursor: pointer;
+    }
+    .langbar button.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+    h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: -0.01em; }
+    .subtitle { color: var(--muted); font-size: 15px; margin: 0 0 32px; }
+    h2 { font-size: 19px; margin: 38px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+    p { margin: 0 0 14px; }
+    a { color: var(--accent); text-decoration: none; word-break: break-word; }
+    a:hover { text-decoration: underline; }
+    .card {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 18px 20px;
+        margin-bottom: 16px;
+    }
+    .card p:last-child { margin-bottom: 0; }
+    details {
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 14px 18px;
+        margin-bottom: 10px;
+        background: var(--bg);
+    }
+    details[open] { background: var(--card); }
+    summary { cursor: pointer; font-weight: 600; outline: none; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::before { content: "\25B8  "; color: var(--accent); }
+    details[open] summary::before { content: "\25BE  "; }
+    details p { margin: 12px 0 0; }
+    footer {
+        margin-top: 56px;
+        padding-top: 20px;
+        border-top: 1px solid var(--border);
+        color: var(--muted);
+        font-size: 14px;
+    }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="langbar">
+    <button data-l="en" class="on">English</button>
+    <button data-l="zh">简体中文</button>
+    <button data-l="ja">日本語</button>
+    <button data-l="ko">한국어</button>
+</div>
+
+<!-- ===================== English ===================== -->
+<section data-lang="en">
+<h1>Flowerz Support</h1>
+<p class="subtitle">A paid, ad-free puzzle game. Need help? Write to us.</p>
+
+<h2>Contact</h2>
+<div class="card">
+    <p><strong>Email:</strong> <a href="mailto:YeehawStudio@gmail.com">YeehawStudio@gmail.com</a></p>
+    <p>We usually reply within 1–2 business days. To help us help you faster, please include your device model, OS version (iOS or Android), and a short description of what happened.</p>
+</div>
+
+<h2>Frequently asked questions</h2>
+
+<details>
+    <summary>Are there ads or in-app purchases?</summary>
+    <p>No. Flowerz is a one-time paid download. There is no advertising, no in-app purchase, no energy system, and no subscription. Everything in the game is unlocked from the moment you buy it.</p>
+</details>
+
+<details>
+    <summary>Where is my progress stored? Will I lose it if I change phones?</summary>
+    <p>All progress — levels, save slots, scores, achievements, settings — is stored only on your device. Nothing is uploaded, and there is no account. That means progress does <strong>not</strong> transfer to a new device, and is lost if you delete the app. You can keep up to three save slots in-game.</p>
+</details>
+
+<details>
+    <summary>Is the leaderboard online?</summary>
+    <p>The leaderboard is local. It ranks your own cleared runs on your own device. It does not use any platform game service (Apple Game Center or Google Play Games) and needs no store account.</p>
+</details>
+
+<details>
+    <summary>How do I change the language?</summary>
+    <p>Open <strong>Settings</strong> in the game and pick a language: English, 简体中文, 日本語, or 한국어. The change applies immediately.</p>
+</details>
+
+<details>
+    <summary>Which devices are supported?</summary>
+    <p>iPhone and iPad running iOS 14 or later, and Android phones and tablets running Android 7.0 (API 24) or later. The game is designed for portrait orientation and is played with one finger — no swiping or dragging required.</p>
+</details>
+
+<details>
+    <summary>How do I reset my progress?</summary>
+    <p>Use the reset option in the in-game Settings to clear progress and settings while keeping the app installed. Deleting the app also removes all locally stored data.</p>
+</details>
+
+<details>
+    <summary>The game crashed or won't open. What should I do?</summary>
+    <p>First, make sure your system software is up to date and try restarting your device. If it still fails, email us with your device model and OS version — we read every report.</p>
+</details>
+
+<details>
+    <summary>How do I get a refund?</summary>
+    <p>Purchases are handled by the store you bought from, not by us. On the App Store, request a refund at <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> with the Apple ID used for the purchase. On Google Play, open <a href="https://play.google.com/store/account/orderhistory">your order history</a>, pick the order, and choose "Report a problem" — or use Help &amp; feedback in the Play Store app.</p>
+</details>
+
+<footer>
+    <p>© 2026 Yeehaw Studio.</p>
+    <p><a href="privacy.html">Privacy Policy</a></p>
+</footer>
+</section>
+
+<!-- ===================== 简体中文 ===================== -->
+<section data-lang="zh" hidden>
+<h1>荷塘春色 · 支持</h1>
+<p class="subtitle">一款付费买断、无广告的益智游戏。需要帮助？写信给我们。</p>
+
+<h2>联系方式</h2>
+<div class="card">
+    <p><strong>邮箱：</strong> <a href="mailto:YeehawStudio@gmail.com">YeehawStudio@gmail.com</a></p>
+    <p>通常在 1–2 个工作日内回复。为了更快定位问题，请附上设备型号、系统版本（iOS 或 Android），以及问题的简短描述。</p>
+</div>
+
+<h2>常见问题</h2>
+
+<details>
+    <summary>有广告或内购吗？</summary>
+    <p>没有。《荷塘春色》是一次性付费下载，没有广告、没有内购、没有体力、没有订阅。购买之后，游戏里的全部内容即刻可用。</p>
+</details>
+
+<details>
+    <summary>进度存在哪里？换手机会丢吗？</summary>
+    <p>所有进度 —— 关卡、存档槽、分数、成就、设置 —— 都只保存在你的设备上。不上传任何内容，也没有账号。因此进度<strong>不会</strong>随设备迁移，删除应用即会丢失。游戏内提供 3 个存档槽。</p>
+</details>
+
+<details>
+    <summary>排行榜是联网的吗？</summary>
+    <p>排行榜是纯本地的，只在你自己的设备上排列你自己的通关记录。它不使用任何平台游戏服务（Apple Game Center 或 Google Play Games），也不需要商店账号。</p>
+</details>
+
+<details>
+    <summary>怎么切换语言？</summary>
+    <p>在游戏内打开<strong>设置</strong>，选择语言：简体中文、English、日本語、한국어。切换后立即生效。</p>
+</details>
+
+<details>
+    <summary>支持哪些设备？</summary>
+    <p>运行 iOS 14 或更高版本的 iPhone 与 iPad；运行 Android 7.0（API 24）或更高版本的安卓手机与平板。游戏为竖屏设计，单指点击即可操作，不需要滑动或拖拽。</p>
+</details>
+
+<details>
+    <summary>怎么重置进度？</summary>
+    <p>使用游戏内设置里的重置功能，可在保留应用的前提下清空进度与设置。直接删除应用同样会清除全部本地数据。</p>
+</details>
+
+<details>
+    <summary>游戏闪退或打不开怎么办？</summary>
+    <p>请先确认系统已更新到最新版本，并尝试重启设备。如果仍然无法运行，请把设备型号和系统版本发邮件给我们 —— 每一封都会看。</p>
+</details>
+
+<details>
+    <summary>怎么退款？</summary>
+    <p>购买由你购买时所用的商店处理，我们无法代办。App Store 购买请访问 <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>，用购买时的 Apple ID 登录后提交；Google Play 购买请打开 <a href="https://play.google.com/store/account/orderhistory">购买记录</a>，选中对应订单后选择「报告问题」，或使用 Play 商店 App 里的「帮助和反馈」。</p>
+</details>
+
+<footer>
+    <p>© 2026 Yeehaw Studio。</p>
+    <p><a href="privacy.html">隐私政策</a></p>
+</footer>
+</section>
+
+<!-- ===================== 日本語 ===================== -->
+<section data-lang="ja" hidden>
+<h1>ハス池の春色 · サポート</h1>
+<p class="subtitle">買い切り・広告なしのパズルゲームです。お困りごとはメールでどうぞ。</p>
+
+<h2>お問い合わせ</h2>
+<div class="card">
+    <p><strong>メール：</strong> <a href="mailto:YeehawStudio@gmail.com">YeehawStudio@gmail.com</a></p>
+    <p>通常 1〜2 営業日以内に返信します。端末の機種、OS のバージョン（iOS / Android）、起きたことを簡単に添えていただけると助かります。</p>
+</div>
+
+<h2>よくあるご質問</h2>
+
+<details>
+    <summary>広告やアプリ内課金はありますか？</summary>
+    <p>ありません。本作は買い切りのダウンロード販売で、広告・アプリ内課金・スタミナ・サブスクリプションは一切ありません。購入した時点でゲーム内のすべてが遊べます。</p>
+</details>
+
+<details>
+    <summary>進行状況はどこに保存されますか？機種変更で消えますか？</summary>
+    <p>ステージ進行、セーブスロット、スコア、実績、設定はすべて端末内にのみ保存されます。アップロードもアカウントもありません。そのため進行状況は新しい端末には<strong>引き継がれず</strong>、アプリを削除すると失われます。ゲーム内にセーブスロットは 3 つあります。</p>
+</details>
+
+<details>
+    <summary>ランキングはオンラインですか？</summary>
+    <p>ランキングは端末内のみで動作し、ご自身のクリア記録を並べるだけです。Apple Game Center や Google Play Games などのプラットフォームのゲームサービスは使用しておらず、ストアのアカウントも不要です。</p>
+</details>
+
+<details>
+    <summary>言語はどう変えますか？</summary>
+    <p>ゲーム内の<strong>設定</strong>を開き、日本語・English・简体中文・한국어 から選んでください。すぐに反映されます。</p>
+</details>
+
+<details>
+    <summary>対応端末を教えてください。</summary>
+    <p>iOS 14 以降の iPhone と iPad、および Android 7.0（API 24）以降の Android 端末です。縦画面専用で、指一本のタップだけで操作できます（スワイプやドラッグは不要です）。</p>
+</details>
+
+<details>
+    <summary>進行状況をリセットするには？</summary>
+    <p>ゲーム内の設定にあるリセット機能で、アプリを残したまま進行状況と設定を消去できます。アプリを削除しても端末内のデータはすべて消えます。</p>
+</details>
+
+<details>
+    <summary>アプリが落ちる・開かない場合は？</summary>
+    <p>まずお使いの OS を最新に更新し、端末を再起動してみてください。それでも改善しない場合は、機種と OS のバージョンを添えてメールをお送りください。すべて拝見します。</p>
+</details>
+
+<details>
+    <summary>返金はどうすればいいですか？</summary>
+    <p>購入はご購入いただいたストアが処理しており、当方では対応できません。App Store での購入は <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> にアクセスし、購入時の Apple ID でサインインして申請してください。Google Play での購入は <a href="https://play.google.com/store/account/orderhistory">購入履歴</a> から該当の注文を選んで申請するか、Play ストアアプリの「ヘルプとフィードバック」をご利用ください。</p>
+</details>
+
+<footer>
+    <p>© 2026 Yeehaw Studio.</p>
+    <p><a href="privacy.html">プライバシーポリシー</a></p>
+</footer>
+</section>
+
+<!-- ===================== 한국어 ===================== -->
+<section data-lang="ko" hidden>
+<h1>연못봄빛 · 지원</h1>
+<p class="subtitle">유료 구매, 광고 없는 퍼즐 게임입니다. 도움이 필요하면 메일을 보내 주세요.</p>
+
+<h2>문의</h2>
+<div class="card">
+    <p><strong>이메일:</strong> <a href="mailto:YeehawStudio@gmail.com">YeehawStudio@gmail.com</a></p>
+    <p>보통 1~2 영업일 안에 답변드립니다. 기기 모델, OS 버전(iOS 또는 Android), 어떤 일이 있었는지 간단히 적어 주시면 더 빠르게 도와드릴 수 있습니다.</p>
+</div>
+
+<h2>자주 묻는 질문</h2>
+
+<details>
+    <summary>광고나 인앱 결제가 있나요?</summary>
+    <p>없습니다. 이 게임은 한 번 구매하는 유료 다운로드이며, 광고·인앱 결제·스태미나·구독이 전혀 없습니다. 구매한 순간 게임 안의 모든 내용을 즐길 수 있습니다.</p>
+</details>
+
+<details>
+    <summary>진행 상황은 어디에 저장되나요? 기기를 바꾸면 사라지나요?</summary>
+    <p>스테이지 진행, 저장 슬롯, 점수, 업적, 설정은 모두 기기 안에만 저장됩니다. 업로드도 계정도 없습니다. 따라서 진행 상황은 새 기기로 <strong>이어지지 않으며</strong>, 앱을 삭제하면 사라집니다. 게임 안에 저장 슬롯이 3개 있습니다.</p>
+</details>
+
+<details>
+    <summary>순위표는 온라인인가요?</summary>
+    <p>순위표는 기기 안에서만 동작하며, 본인의 클리어 기록을 정렬해 보여줄 뿐입니다. Apple Game Center나 Google Play Games 같은 플랫폼 게임 서비스를 사용하지 않고, 스토어 계정도 필요 없습니다.</p>
+</details>
+
+<details>
+    <summary>언어는 어떻게 바꾸나요?</summary>
+    <p>게임 안의 <strong>설정</strong>을 열고 한국어·English·简体中文·日本語 중에서 고르세요. 즉시 적용됩니다.</p>
+</details>
+
+<details>
+    <summary>어떤 기기를 지원하나요?</summary>
+    <p>iOS 14 이상의 iPhone과 iPad, 그리고 Android 7.0(API 24) 이상의 Android 기기입니다. 세로 화면 전용이며, 한 손가락 탭만으로 조작합니다(스와이프나 드래그가 필요 없습니다).</p>
+</details>
+
+<details>
+    <summary>진행 상황을 초기화하려면?</summary>
+    <p>게임 안 설정의 초기화 기능으로 앱은 그대로 둔 채 진행 상황과 설정을 지울 수 있습니다. 앱을 삭제해도 기기에 저장된 모든 데이터가 함께 지워집니다.</p>
+</details>
+
+<details>
+    <summary>게임이 종료되거나 열리지 않습니다.</summary>
+    <p>먼저 OS를 최신 버전으로 업데이트하고 기기를 재시작해 보세요. 그래도 문제가 계속되면 기기 모델과 OS 버전을 적어 메일을 보내 주세요. 모든 제보를 확인합니다.</p>
+</details>
+
+<details>
+    <summary>환불은 어떻게 받나요?</summary>
+    <p>구매는 구매하신 스토어가 처리하며 저희가 대신할 수 없습니다. App Store 구매는 <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a> 에 접속해 구매에 사용한 Apple ID로 로그인한 뒤 신청하세요. Google Play 구매는 <a href="https://play.google.com/store/account/orderhistory">구매 내역</a> 에서 해당 주문을 선택해 신청하거나, Play 스토어 앱의 '도움말 및 의견 보내기'를 이용하세요.</p>
+</details>
+
+<footer>
+    <p>© 2026 Yeehaw Studio.</p>
+    <p><a href="privacy.html">개인정보 처리방침</a></p>
+</footer>
+</section>
+
+</div>
+
+<script>
+(function () {
+    var KEY = "flowerz_lang";
+    var buttons = document.querySelectorAll(".langbar button");
+    var sections = document.querySelectorAll("section[data-lang]");
+
+    function pick(lang) {
+        var hit = false;
+        sections.forEach(function (s) {
+            var on = s.getAttribute("data-lang") === lang;
+            s.hidden = !on;
+            if (on) { hit = true; }
+        });
+        if (!hit) { return false; }
+        buttons.forEach(function (b) {
+            b.classList.toggle("on", b.getAttribute("data-l") === lang);
+        });
+        document.documentElement.lang = lang;
+        try { localStorage.setItem(KEY, lang); } catch (e) {}
+        return true;
+    }
+
+    buttons.forEach(function (b) {
+        b.addEventListener("click", function () {
+            pick(b.getAttribute("data-l"));
+        });
+    });
+
+    var saved = null;
+    try { saved = localStorage.getItem(KEY); } catch (e) {}
+    var nav = (navigator.language || "en").toLowerCase();
+    var guess = nav.indexOf("zh") === 0 ? "zh"
+              : nav.indexOf("ja") === 0 ? "ja"
+              : nav.indexOf("ko") === 0 ? "ko" : "en";
+    pick(saved || guess || "en");
+})();
+</script>
+</body>
+</html>
